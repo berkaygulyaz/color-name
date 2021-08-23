@@ -6,8 +6,6 @@ const Search = ({handleSearch}) => {
 
   const handleChange = event => {
     setSearch(event.target.value)
-
-    console.log(search)
   }
 
   return (
@@ -15,9 +13,8 @@ const Search = ({handleSearch}) => {
       <div className="search-color">
         <label className="input-label">Search Color</label>
         <span className="hashtag">#</span>
-        <input type="text" className="search-input" value={search} onChange={handleChange} />
+        <input type="text" className="search-input" maxLength="6" value={search} onChange={handleChange} />
         <i className="search fas fa-search" onClick={() => handleSearch(search)}></i>
-        {/* <div className="berkay">{colorName}</div> */}
       </div>
     </>
   );
