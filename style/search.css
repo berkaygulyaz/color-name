@@ -1,0 +1,44 @@
+.find-color-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.find-color-wrapper .search-color {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+}
+
+.find-color-wrapper .search-color label {
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.find-color-wrapper .search-color .search-input {
+    border: none;
+    border-bottom: 1px solid;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    padding: 5px 12px;
+    width: 300px;
+    text-transform: uppercase;
+}
+
+.find-color-wrapper .search-color .hashtag {
+    bottom: 5px;
+    position: absolute;
+    font-size: 18px;
+}
+
+.find-color-wrapper .search-color .search {
+    position: absolute;
+    bottom: 7px;
+    right: 230px;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.color-card-wrapper {
+    width: 50%;
+    float: left;
+}
+
+.color-card-wrapper .color-card {
+    width: 300px;
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px 0px rgb(0 0 0 / 4%);
+    border-radius: 1px;
+    float: right;
+}
+
+.color-card-wrapper .color-card .box {
+    width: 100%;
+    background-color: black;
+    height: 300px;
+}
+
+.color-card-wrapper .color-card h2 {
+    color: #333333;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 0;
+}
