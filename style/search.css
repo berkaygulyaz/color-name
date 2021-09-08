@@ -30,6 +30,10 @@
     text-transform: uppercase;
 }
 
+.find-color-wrapper .search-color .search-input:focus{
+    outline: none;
+}
+
 .find-color-wrapper .search-color .hashtag {
     bottom: 5px;
     position: absolute;

@@ -11,11 +11,11 @@ const Home = () => {
   const getInitialData = async (e) => {
     if(e) {
       const res = await fetch(
-        `https://api.color.pizza/v1/${e}`
+        `http://www.thecolorapi.com/id?scheme&hex=${e}`
       );
       const data = await res.json();
-      setColorName(data.colors[0].name);
-      setColor(data.colors[0].hex);
+      setColorName(data.name.value);
+      setColor(data.hex.value);
     }
   }
 

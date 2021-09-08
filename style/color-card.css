@@ -24,3 +24,16 @@
     margin: 10px 0;
     padding: 0;
 }
+
+.color-card-wrapper .color-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-card-wrapper .copy-name {
+    color: #333333;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
