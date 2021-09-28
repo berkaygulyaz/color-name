@@ -18,9 +18,12 @@
     height: 300px;
 }
 
-.color-card-wrapper .color-card h2 {
+.color-card-wrapper .color-card h2,
+.color-card-wrapper .color-card .color-palette-btn{
     color: #333333;
+    cursor: pointer;
     font-size: 15px;
+    font-weight: bold;
     margin: 10px 0;
     padding: 0;
 }
@@ -29,11 +32,4 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.color-card-wrapper .copy-name {
-    color: #333333;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
 }
