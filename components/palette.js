@@ -20,27 +20,25 @@ const Palette = () => {
       arr.push({ r, g, b });
       setHexColor(arr);
     }
-    // console.log(hexColor);
   }, []);
+
+  function rgbToHex(r, g, b) {
+    return ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+  }
 
   return (
     <div className="palette-wrapper">
       <div className="palette-box-wrapper">
-        {hexColor.map((berkay) => 
-          // console.log(berkay)
-          <div className="palette-box" key={Math.random()}>
-            <div
+        {hexColor.map((item) => (
+          <Link href={`/#${rgbToHex(item.r, item.g, item.b)}`} key={Math.random()}>
+            <a
               className="color-box"
               style={{
-                background: `rgb(${berkay.r},${berkay.g},${berkay.b})`,
+                background: `rgb(${item.r},${item.g},${item.b})`,
               }}
-            ></div>
-          </div>
-        )}
-        {/* {hexColor.forEach((element) => (
-          // console.log(element),
-          
-        ))} */}
+            ></a>
+          </Link>
+        ))}
       </div>
     </div>
   );

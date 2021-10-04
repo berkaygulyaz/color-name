@@ -13,7 +13,8 @@
     justify-content: space-around;
 }
 
-.palette-wrapper .palette-box {
+
+.palette-wrapper .color-box{
     box-shadow: 0 0 10px 0px rgb(0 0 0 / 4%);
     cursor: pointer;
     height: 400px;
@@ -21,11 +22,6 @@
     transition: width .5s;
 }
 
-.palette-wrapper .palette-box:hover {
+.palette-wrapper .color-box:hover {
     width: 200px;
-}
-
-.palette-wrapper .palette-box .color-box {
-    width: 100%;
-    height: 100%;
 }
