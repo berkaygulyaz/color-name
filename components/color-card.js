@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 const ColorCard = ({ name, hex }) => {
 
   const copyName = (e) => {
@@ -17,9 +15,6 @@ const ColorCard = ({ name, hex }) => {
         <div className="box" style={{ backgroundColor: `${hex}`  }}></div>
         <div className="color-info">
           <h2 className="color-name" onClick={copyName}>{name}</h2>
-          <Link href={{ pathname: '/palette', query: { hex: `${hex}` } }}>
-            <a className="color-palette-btn">Show Color Palette</a>
-          </Link>
         </div>
       </div>
     </div>
